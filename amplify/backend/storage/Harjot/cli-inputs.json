@@ -1,0 +1,14 @@
+{
+  "resourceName": "Harjot",
+  "policyUUID": "96cdcd46",
+  "bucketName": "shoppinglist2",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

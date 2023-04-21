@@ -1,0 +1,26 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify7e623cf9bae04-staging-212928-authRole",
+      "UnauthRoleArn": "arn:aws:iam::821153714346:role/amplify-amplify7e623cf9bae04-staging-212928-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::821153714346:role/amplify-amplify7e623cf9bae04-staging-212928-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify7e623cf9bae04-staging-212928-deployment",
+      "UnauthRoleName": "amplify-amplify7e623cf9bae04-staging-212928-unauthRole",
+      "StackName": "amplify-amplify7e623cf9bae04-staging-212928",
+      "StackId": "arn:aws:cloudformation:us-east-2:821153714346:stack/amplify-amplify7e623cf9bae04-staging-212928/99226ec0-e08b-11ed-a56d-0aece5e42cdb",
+      "AmplifyAppId": "d2q8imqa5r9z78"
+    },
+    "categories": {
+      "auth": {
+        "shoppinglist289899add": {}
+      },
+      "api": {
+        "shoppinglist2": {}
+      },
+      "storage": {
+        "Harjot": {}
+      }
+    }
+  }
+}
