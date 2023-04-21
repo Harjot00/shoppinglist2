@@ -43,9 +43,17 @@ const App = ({ signOut }) => {
     event.preventDefault();
     const form = new FormData(event.target);
     const image = form.get("image");
+    const priceofItem = form.get("priceofItem");
+    const price = parseFloat(priceofItem);
+
+    if (isNaN(price) || price < 0) {
+      alert("The price must be greater than zero");
+      return;
+    }
     const data = {
       name: form.get("name"),
       description: form.get("description"),
+      price: price,
       image: image.name,
     };
     if (!!data.image) await Storage.put(data.name, image);
@@ -87,6 +95,14 @@ const App = ({ signOut }) => {
             variation="quiet"
             required
           />
+          <TextField
+            name="priceofItem"
+            placeholder="add price here"
+            label="Price"
+            labelHidden
+            variant="quiet"
+            required
+          />
           <View
             name="image"
             as="input"
@@ -108,9 +124,10 @@ const App = ({ signOut }) => {
             alignItems="center"
           >
             <Text as="strong" fontWeight={700}>
-              {note.name}
+              Name:{note.name}
             </Text>
-            <Text as="span">{note.description}</Text>
+            <Text>price:${note.price} </Text>
+            <Text as="span">Description:{note.description}</Text>
             {note.image && (
               <Image
                 src={note.image}
