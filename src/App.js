@@ -49,6 +49,7 @@ const App = ({ signOut }) => {
     if (isNaN(price) || price < 0) {
       alert("The price must be greater than zero");
       return;
+      /* this is the function that I created when the to let know the user if price is wrong*/
     }
     const data = {
       name: form.get("name"),
@@ -76,7 +77,7 @@ const App = ({ signOut }) => {
 
   return (
     <View className="App">
-      <Heading level={1}>My Notes App</Heading>
+      <Heading level={1}>Shoppinglist by Harjot Singh</Heading>
       <View as="form" margin="3rem 0" onSubmit={createNote}>
         <Flex direction="row" justifyContent="center">
           <TextField
@@ -102,6 +103,7 @@ const App = ({ signOut }) => {
             labelHidden
             variant="quiet"
             required
+            /* this is the field that I created to add price */
           />
           <View
             name="image"
@@ -145,5 +147,7 @@ const App = ({ signOut }) => {
     </View>
   );
 };
+
+/* This is test2 submitted by Harjot Singh */
 
 export default withAuthenticator(App);
